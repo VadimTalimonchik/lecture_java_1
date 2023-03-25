@@ -1,3 +1,5 @@
+import javax.script.Invocable;
+
 /**
  * program
  */
@@ -71,11 +73,32 @@
 //     } 
 // }
 
+// // -----------------
+// // Тип данных Строки
+// public class program {
+//     public static void main(String[] args){
+//         String msg = "Hello world";
+//         System.out.println(msg);
+//     } 
+// }
+
 // -----------------
-// Тип данных Строки
-public class program {
+// Неявная типизация
+public class program{
     public static void main(String[] args){
-        String msg = "Hello world";
-        System.out.println(msg);
-    } 
+        var a = 123;
+        System.out.println(a);
+        var d = 123.456;
+        System.out.println(d);
+        System.out.println(getType(a));
+        System.out.println(getType(d));
+        d = 1022;
+        System.out.println(d);
+        // d = "mistake";
+        // error: incompatible types:
+        // String cannot be converted to double
+    }
+    static String getType(Object o) {
+        return o.getClass().getSimpleName();
+    }
 }
