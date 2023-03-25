@@ -82,23 +82,26 @@ import javax.script.Invocable;
 //     } 
 // }
 
+// // -----------------
+// // Неявная типизация
+// public class program{
+//     public static void main(String[] args){
+//         var a = 123;
+//         System.out.println(a);
+//         var d = 123.456;
+//         System.out.println(d);
+//         System.out.println(getType(a));
+//         System.out.println(getType(d));
+//         d = 1022;
+//         System.out.println(d);
+//         // d = "mistake";
+//         // error: incompatible types:
+//         // String cannot be converted to double
+//     }
+//     static String getType(Object o) {
+//         return o.getClass().getSimpleName();
+//     }
+// }
+
 // -----------------
-// Неявная типизация
-public class program{
-    public static void main(String[] args){
-        var a = 123;
-        System.out.println(a);
-        var d = 123.456;
-        System.out.println(d);
-        System.out.println(getType(a));
-        System.out.println(getType(d));
-        d = 1022;
-        System.out.println(d);
-        // d = "mistake";
-        // error: incompatible types:
-        // String cannot be converted to double
-    }
-    static String getType(Object o) {
-        return o.getClass().getSimpleName();
-    }
-}
+// Классы-Обёртки
