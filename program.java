@@ -111,3 +111,37 @@ import javax.script.Invocable;
 //         System.out.println(Integer.MIN_VALUE);
 //     }
 // }
+
+// -----------------
+// Операции Java
+// // побитовый сдвиг
+// public class program{
+//     public static void main(String[] args){
+//         int a = 8; // 1000
+//         System.out.println(a << 1);
+//         int d = 18; // 10010
+//         System.out.println(d >> 1);
+//     }
+// }
+
+// public class program{
+//     public static void main(String[] args){
+//         int a = 5;
+//         int b = 2;
+//         System.out.println(a | b); // 5(101) | 2(010) = 7(111)
+//         System.out.println(a & b); // 5(101) & 2(010) = 0(000)
+//         System.out.println(a ^ b); // 5(101) ^ 2(010) = 7(111)
+//     }
+// }
+
+// public class program{
+//     public static void main(String[] args){
+//         String s = "qwer"; // 4 символа, 0..3 - индексы
+//         boolean b = s.length() >= 5 && s.charAt(3) == '1';
+//         System.out.println(b);
+//         // boolean c = s.length() >= 5 & s.charAt(3) == '1';
+//         // System.out.println(c);
+//         boolean f = s.length() >= 4 && s.charAt(3) == 'r';
+//         System.out.println(f);
+//     }
+// }
