@@ -49,24 +49,33 @@
 //     }    
 // }
 
-// -----------------
-// Тип данных boolean
-public class program {
-         public static void main(String[] args){
-            boolean flag1 = 123 <= 234;
-            System.out.println(flag1);
-            boolean flag2 = 123 >= 234;
-            System.out.println(flag2);
-            boolean flag3 = flag1 ^ flag2;
-            System.out.println(flag3);
-            boolean f1 = true && false;
-            System.out.println(f1);
-            boolean f2 = true & false;
-            System.out.println(f2);
-            boolean f3 = true || false;
-            System.out.println(f3);
-            boolean f4 = true | false;
-            System.out.println(f4);
+// // -----------------
+// // Тип данных boolean
+// public class program {
+//          public static void main(String[] args){
+//             boolean flag1 = 123 <= 234;
+//             System.out.println(flag1);
+//             boolean flag2 = 123 >= 234;
+//             System.out.println(flag2);
+//             boolean flag3 = flag1 ^ flag2;
+//             System.out.println(flag3);
+//             boolean f1 = true && false;
+//             System.out.println(f1);
+//             boolean f2 = true & false;
+//             System.out.println(f2);
+//             boolean f3 = true || false;
+//             System.out.println(f3);
+//             boolean f4 = true | false;
+//             System.out.println(f4);
 
+//     } 
+// }
+
+// -----------------
+// Тип данных Строки
+public class program {
+    public static void main(String[] args){
+        String msg = "Hello world";
+        System.out.println(msg);
     } 
 }
