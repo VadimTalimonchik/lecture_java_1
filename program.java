@@ -210,11 +210,53 @@ import javax.script.Invocable;
 //     }
 // }
 
-// для массива
-public class program{
-    public static void main(String[] args){
-        int[] a = new int[10];
-        double[] d = a;
-        System.out.println(d);
+// // для массива
+// public class program{
+//     public static void main(String[] args){
+//         int[] a = new int[10];
+//         double[] d = a;
+//         System.out.println(d);
+//     }
+// }
+
+// // --------------------
+// // Получение данных из терминала
+// // строки
+// import java.util.Scanner;
+// public class program {
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.printf("name: ");
+//         String name = iScanner.nextLine();
+//         System.out.printf("Привет, %s!\n", name);
+//         iScanner.close();
+//     }
+// }
+
+// // Некоторые примитивы
+// import java.util.Scanner;
+// public class program {
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.printf("int a: ");
+//         int x = iScanner.nextInt();
+//         System.out.printf("double a: ");
+//         double y = iScanner.nextDouble();
+//         System.out.printf("%d + %f = %f\n", x, y, x + y);
+//         iScanner.close();
+//     }
+// }
+
+// Проверка на соответствие получаемого типа
+import java.util.Scanner;
+public class program {
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("int a: ");
+        boolean flag = iScanner.hasNextInt();
+        System.out.println(flag);
+        int i = iScanner.nextInt();
+        System.out.println(i);
+        iScanner.close();
     }
 }
