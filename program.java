@@ -176,15 +176,45 @@ import javax.script.Invocable;
 //     }
 // }
 
-// ИЛИ
+// // ИЛИ
+// public class program{
+//     public static void main(String[] args){
+//         int[][] arr = new int[3][5];
+//         for(int i = 0; i < arr.length; i++) {
+//             for(int j = 0; j < arr[i].length; j++) {
+//                 System.out.printf("%d", arr[i][j]);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// // --------------
+// // Преобразования
+// public class program{
+//     public static void main(String[] args){
+//         int i = 123; double d = i;
+//         System.out.println(i);
+//         System.out.println(d);
+
+//         d = 3.1415; i = (int) d;
+//         System.out.println(d);
+//         System.out.println(i);
+
+//         byte b = Byte.parseByte("123");
+//         System.out.println(b);
+
+//         b = Byte.parseByte("1234");
+//         System.out.println(d);
+
+//     }
+// }
+
+// для массива
 public class program{
     public static void main(String[] args){
-        int[][] arr = new int[3][5];
-        for(int i = 0; i < arr.length; i++) {
-            for(int j = 0; j < arr[i].length; j++) {
-                System.out.printf("%d", arr[i][j]);
-            }
-            System.out.println();
-        }
+        int[] a = new int[10];
+        double[] d = a;
+        System.out.println(d);
     }
 }
