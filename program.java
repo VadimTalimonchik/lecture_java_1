@@ -283,13 +283,26 @@ import javax.script.Invocable;
 //     }
 // }
 
-// Использование форматирования
+// // Использование форматирования
+// public class program {
+//     public static void main(String[] args) {
+//         int a = 1, b = 2;
+//         int c = a + b;
+//         String res = String.format("%d + %d = %d\n", a, b, c);
+//         System.out.printf("%d + %d = %d\n", a, b, c);
+//         System.out.println(res);
+//     }
+// }
+
+// Виды спецификаторов
 public class program {
     public static void main(String[] args) {
-        int a = 1, b = 2;
-        int c = a + b;
-        String res = String.format("%d + %d = %d\n", a, b, c);
-        System.out.printf("%d + %d = %d\n", a, b, c);
-        System.out.println(res);
+        float pi = 3.1415f;
+        System.out.printf("%f\n", pi);
+        System.out.printf("%.2f\n", pi);
+        System.out.printf("%.3f\n", pi);
+        System.out.printf("%e\n", pi);
+        System.out.printf("%.2e\n", pi);
+        System.out.printf("%.3ef\n", pi);
     }
 }
