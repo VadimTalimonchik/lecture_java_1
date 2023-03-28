@@ -247,16 +247,49 @@ import javax.script.Invocable;
 //     }
 // }
 
-// Проверка на соответствие получаемого типа
-import java.util.Scanner;
+// // Проверка на соответствие получаемого типа
+// import java.util.Scanner;
+// public class program {
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.printf("int a: ");
+//         boolean flag = iScanner.hasNextInt();
+//         System.out.println(flag);
+//         int i = iScanner.nextInt();
+//         System.out.println(i);
+//         iScanner.close();
+//     }
+// }
+
+// -----------------------------
+// Форматированный вывод
+
+// // Конкотинация (вредна для String)
+// public class program {
+//     public static void main(String[] args) {
+//         int a = 1, b = 2;
+//         int c = a + b;
+//         String res = a + " + " + b + " = " + c;
+//         System.out.println(res);
+//     }
+// }
+
+// public class program {
+//     public static void main(String[] args) {
+//         String s = "qwe";
+//         int a = 123;
+//         String q = s + a;
+//         System.out.println(q);
+//     }
+// }
+
+// Использование форматирования
 public class program {
     public static void main(String[] args) {
-        Scanner iScanner = new Scanner(System.in);
-        System.out.printf("int a: ");
-        boolean flag = iScanner.hasNextInt();
-        System.out.println(flag);
-        int i = iScanner.nextInt();
-        System.out.println(i);
-        iScanner.close();
+        int a = 1, b = 2;
+        int c = a + b;
+        String res = String.format("%d + %d = %d\n", a, b, c);
+        System.out.printf("%d + %d = %d\n", a, b, c);
+        System.out.println(res);
     }
 }
