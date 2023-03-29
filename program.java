@@ -294,15 +294,68 @@ import javax.script.Invocable;
 //     }
 // }
 
-// Виды спецификаторов
+// // Виды спецификаторов
+// public class program {
+//     public static void main(String[] args) {
+//         float pi = 3.1415f;
+//         System.out.printf("%f\n", pi);
+//         System.out.printf("%.2f\n", pi);
+//         System.out.printf("%.3f\n", pi);
+//         System.out.printf("%e\n", pi);
+//         System.out.printf("%.2e\n", pi);
+//         System.out.printf("%.3ef\n", pi);
+//     }
+// }
+
+// -------------------
+// Область видимости переменных
+
+// так не сработает
+// public class program {
+//     public static void main(String[] args) {
+//         int a = 123;
+//         {
+//             int a = 222;
+//             System.out.println(a);
+//         }
+//         System.out.println(a);
+//     }
+// }
+
+// // а так сработает
+// public class program {
+//     public static void main(String[] args) {
+//         {
+//             int a = 222;
+//             System.out.println(a);
+//         }
+//         int a = 123;
+//         System.out.println(a);
+//     }
+// }
+
+// // и так сработает
+// public class program {
+//     public static void main(String[] args) {
+//         int b = 111;
+//         {
+//             int a = 222;
+//             System.out.println(a + b);
+//         }
+//         int a = 123;
+//         System.out.println(a);
+//     }
+// }
+
+
 public class program {
     public static void main(String[] args) {
-        float pi = 3.1415f;
-        System.out.printf("%f\n", pi);
-        System.out.printf("%.2f\n", pi);
-        System.out.printf("%.3f\n", pi);
-        System.out.printf("%e\n", pi);
-        System.out.printf("%.2e\n", pi);
-        System.out.printf("%.3ef\n", pi);
+        int b = 111;
+        {
+            int a = 222;
+            System.out.println(a + b);
+        }
+        int a = 123;
+        System.out.println(a);
     }
 }
