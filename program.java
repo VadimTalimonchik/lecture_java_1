@@ -1,4 +1,4 @@
-import javax.script.Invocable;
+// import javax.script.Invocable;
 
 /**
  * program
@@ -347,15 +347,48 @@ import javax.script.Invocable;
 //     }
 // }
 
+// public class program {
+//     public static void main(String[] args) {
+//         int b = 111;
+//         {
+//             int a = 222;
+//             System.out.println(a + b);
+//         }
+//         int a = 123;
+//         System.out.println(a);
+//     }
+// }
+
+// --------------------
+// Функции и методы
+
+// // метод внутри класса
+// public class program {
+//     public static void main(String[] args) {
+//         sayHi();
+//     }
+//     static void sayHi() {
+//         System.out.println("hi");
+//     }
+// }
+
+// // метод в другом файле
+// public class program {
+//     public static void main(String[] args) {
+//         lib.sayHi();
+//     }
+// }
 
 public class program {
+    static int sum(int a, int b) {
+    return a+b;
+    }
+    static double factor(int n) {
+    if(n==1)return 1;
+    return n * factor(n-1);
+    }
     public static void main(String[] args) {
-        int b = 111;
-        {
-            int a = 222;
-            System.out.println(a + b);
-        }
-        int a = 123;
-        System.out.println(a);
+    System.out.println(sum(1, 3));
+    System.out.println(factor(5));
     }
 }
