@@ -453,5 +453,88 @@
 //     }
 // }
 
-// --------------------
-// Циклы
+// // --------------------
+// // Циклы
+// // цикл while
+// public class program {
+//     public static void main(String[] args) {
+//         int value = 321;
+//         int count = 0;
+//         while (value != 0) {
+//             value /= 10;
+//             count++;
+//         }
+//         System.out.println(count);
+//     }
+// }
+
+// // цикл do while
+// public class program {
+//     public static void main(String[] args) {
+//         int value = 321;
+//         int count = 0;
+//         do {
+//             value /= 10;
+//             count++;
+//         } while (value != 0);
+//         System.out.println(count);
+//     }
+// }
+
+// // continue, break
+// public class program {
+//     public static void main(String[] args) {
+//         for(int i = 0; i < 10; i++) {
+//             System.out.println(i);
+//         }
+
+//         for(int i = 0; i < 10; i++) {
+//             if(i % 2 == 0) {
+//                 continue;
+//             }
+//             System.out.println(i);
+//         }
+
+//         for(int i = 0; i < 10; i++) {
+//             if(i % 2 != 0) {
+//                 continue;
+//             }
+//             System.out.println(i);
+//         }
+//     }
+// }
+
+// // цикл for
+// public class program {
+//     public static void main(String[] args) {
+//         int s = 0;
+//         for(int i = 1; i <= 10; i++) {
+//             s += i;
+//         }
+//         System.out.println(s);
+//     }
+// }
+
+// // вложенные циклы
+// public class program {
+//     public static void main(String[] args) {
+//         for(int i = 0; i < 5; i++) {
+//             for(int j = 0; j < 5; j++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// цикл for : (for in или foreach)
+public class program {
+    public static void main(String[] args) {
+        int arr[] = new int[10];
+        for(int item : arr) {
+            System.out.printf("%d", item);
+        }
+        System.out.println();
+    }
+}
